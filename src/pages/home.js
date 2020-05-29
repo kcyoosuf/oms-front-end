@@ -33,7 +33,9 @@ export default (props) => {
                         buttonText={component.buttonText}
 
                     >
-                        <OfferSM items={component.items} />
+                        
+                            <OfferSM items={component.items} />
+                        
                     </Section>
                 )
             }

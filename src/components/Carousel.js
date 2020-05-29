@@ -47,7 +47,7 @@ export default ({ items }) => {
         <Carousel autoPlay showThumbs={false} showIndicators={false}>
             {items.map((item, index) => {
                 return (
-                    <Box display="flex" justifyContent="space-between">
+                    <Box display="flex" justifyContent="space-between" key={index}>
                         <img src={item.imageUrl} alt="Contemplative Reptile" className={classes.image} />
                     </Box>
                 )

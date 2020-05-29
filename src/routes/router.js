@@ -7,6 +7,7 @@ const Search = React.lazy(() => import("../pages/search"));
 const Product = React.lazy(() => import("../pages/product"));
 const Cart = React.lazy(() => import("../pages/cart"));
 const Checkout = React.lazy(() => import("../pages/checkout"));
+const MobileSearch = React.lazy(() => import("../pages/mobile-search"));
 
 export default () => (
   <Suspense fallback={<div>Loading...</div>}>
@@ -19,6 +20,7 @@ export default () => (
       
       <Route exact path="/cart" component={Cart} />
       <Route exact path="/checkout" component={Checkout} />
+      <Route exact path="/mobile-search" component={MobileSearch} />
     </Switch>
   </Suspense>
 );

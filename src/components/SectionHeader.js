@@ -1,21 +1,22 @@
 import React from 'react';
-import { Toolbar, Grid, Divider } from '@material-ui/core';
+import { Toolbar, Divider, Box } from '@material-ui/core';
 const SectionHeader = ({ left, right }) => {
     return (
         <>
             <Toolbar>
-                <Grid
-                    justify="space-between"
-                    container
+                <Box
+                    width={1}
+                    display="flex"
+                    justifyContent="space-between"
                 >
-                    <Grid item>
+                    <Box>
                         {left}
-                    </Grid>
+                    </Box>
 
-                    <Grid item>
+                    <Box>
                         {right}
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Toolbar>
             <Divider />
         </>
